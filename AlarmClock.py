@@ -35,15 +35,13 @@ setYourAlarm = Label(clock,text = "When to wake you up",fg="blue",relief = "soli
 hour = StringVar()
 min = StringVar()
 sec = StringVar()
-global wakeupEntry
+
 #Time required to set the alarm clock:
 hourTime= Entry(clock,textvariable = hour,bg = "pink",width = 25).place(x=160,y=50)
-# hourTime = Entry(clock,textvariable = hour,bg = "#FEFBD8",width = 4,font = (20)).place(x = 220,y = 53)
 minTime= Entry(clock,textvariable = min,bg = "yellow",width = 25).place(x=200,y=50)
 secTime = Entry(clock,textvariable = sec,bg = "lightgreen",width = 25).place(x=250,y=50)
-# wakeupEntry = Entry(clock,justify=CENTER,bd=2,width=20,font="Arial 25",fg="blue",bg="red").place(x=20,y=160)
 
-
+### wakeupEntry = Entry(clock,justify=CENTER,bd=2,width=20,font="Arial 25",fg="blue",bg="red").place(x=20,y=160)
 #To take the time input by user:
 submit = Button(clock,text = "Set Alarm",fg="red",width = 10,command = actual_time).place(x =110,y=100)
 quitB = Button(clock,text = "QUIT",fg="red",width = 10,command = quit).place(x =220,y=100)
